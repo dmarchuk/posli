@@ -1,0 +1,203 @@
+footer {
+  background: @footerBackground;
+  text-align: center;
+  padding: 121px 0 76px 0;
+  width: 100%;
+
+  @media @mobile {
+    padding: 57px 12px 52px 12px;
+    display: table;
+  }
+
+  h2 {
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+
+    @media @mobile {
+      font-size: 21px;
+      text-align: left;
+      padding: 0 36px;
+    }
+
+  }
+
+  input {
+    width: 329px;
+    height: 46px;
+    .border-radius(4px 0 0 4px);
+
+    @media @mobile {
+      max-width: 212px;
+      width: 100%;
+      height: 40px !important;
+    }
+
+  }
+
+  button {
+    width: 136px;
+    height: 46px;
+    .border-radius(0 4px 4px 0);
+
+    @media @mobile {
+      max-width: 78px;
+      width: 100%;
+      height: 40px !important;
+    }
+
+  }
+
+  div.form-wrapper {
+    margin-top: 37px;
+
+    @media @mobile {
+      position: relative;
+      margin-top: 17px;
+      padding: 0 36px 76px 36px;
+
+      .form {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 0;
+      }
+
+    }
+
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      color: white;
+      line-height: 26px;
+      max-width: 640px;
+      margin: 39px auto 0 auto;
+
+      @media @mobile {
+        font-size: 16px;
+        line-height: 24px !important;
+        text-align: left;
+        margin-top: 19px !important;
+        font-weight: 500;
+      }
+
+    }
+
+  }
+
+  .success {
+    height: 163px !important;
+
+    @media @mobile {
+      height: 108px !important;
+    }
+
+  }
+
+  .share {
+    font-size: 0;
+    margin-top: 74px;
+
+    @media @mobile {
+      margin-top: 33px !important;
+    }
+
+    span {
+      font-size: 19px;
+      font-weight: 300;
+      color: white;
+      display: inline-block;
+      vertical-align: middle;
+
+      @media @mobile {
+        font-size: 16px;
+      }
+
+    }
+
+    a {
+
+      &.facebook, &.twitter {
+        display: inline-block;
+        vertical-align: middle;
+        width: 48px;
+        height: 48px;
+        .border-radius(50%);
+        border: 1px solid white;
+        .transition(background .2s linear);
+
+        @media @mobile {
+          width: 50px !important;
+          height: 50px !important;
+        }
+
+        span {
+          background-image: url("../img/social.png");
+          background-repeat: no-repeat;
+          display: block;
+
+          @media @retina {
+            background-image: url("../img/social@2x.png") !important;
+            background-size: 27px 36px !important;
+          }
+
+        }
+
+        &:hover {
+          background-color: white;
+        }
+
+      }
+
+      &.facebook {
+        margin: 0 10px 0 15px;
+
+        @media @mobile {
+          margin-right: 12px;
+        }
+
+        span {
+          width: 7px;
+          height: 17px;
+          background-position: 0px -20px;
+          margin: 15px auto 0 auto;
+
+          @media @mobile {
+            margin-top: 16px;
+          }
+
+        }
+
+        &:hover span {
+          background-position: 0px 0;
+        }
+
+      }
+
+      &.twitter {
+
+        span {
+          width: 15px;
+          height: 16px;
+          background-position: -12px -20px;
+          margin: 17px auto 0 auto;
+
+          @media @mobile {
+            margin-top: 18px;
+          }
+
+        }
+
+        &:hover span {
+          background-position: -12px 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

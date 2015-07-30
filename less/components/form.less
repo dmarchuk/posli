@@ -1,0 +1,99 @@
+.form-wrapper {
+  text-align: center;
+  font-size: 0;
+
+  .form {
+    font-size: 0 !important;
+  }
+
+  * {
+    font-size: 15px;
+  }
+
+}
+
+.success {
+  display: none;
+  text-align: center;
+  font-size: 0;
+  margin-top: 9px;
+
+  @media @mobile {
+    position: relative;
+    padding: 50px 0 0 0;
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    display: none;
+
+    @media @notmobile {
+      margin-bottom: 12px;
+    }
+
+    &.smooth-mobile {
+      display: block!important;
+      margin-top: 15px;
+      font-size: 13px;
+
+      @media @notmobile {
+        display: none!important;
+      }
+
+    }
+
+  }
+
+  a {
+    width: 168px;
+    height: 40px;
+    .border-radius(4px);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4px;
+
+    @media @mobile {
+      width: 141px;
+      height: 44px;
+      line-height: 44px;
+      font-size: 13px;
+
+      h3 {
+        font-size: 13px;
+        padding: 0 25px;
+      }
+
+      .buttons-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+    }
+
+    &.facebook {
+      background-color: #3462e7;
+      margin-right: 11px;
+
+      @media @mobile {
+        margin-right: 7px;
+      }
+
+    }
+
+    &.twitter {
+      background-color: #25b2f3;
+    }
+
+  }
+
+}

@@ -1,0 +1,79 @@
+.task-management {
+
+  @media @notmobile {
+    background-color: #f6f9fa;
+  }
+
+  @media @mobile {
+    padding: 0 12px;
+    background-image: url('../img/iphone-bg.png');
+  }
+
+  div.container {
+    background: url("../img/iphone.png") 116px -233px no-repeat;
+    padding: 0 160px 196px 0;
+    white-space: nowrap;
+    background-size: 380px auto;
+    text-align: right;
+
+    @media @desktop-container {
+      padding-left: 550px !important;
+      text-align: left !important;
+    }
+
+    @media @tablet {
+      background-size: 280px auto !important;
+      background-position: 40px -10px !important;
+      padding-right: 50px !important;
+      padding-left: 360px !important;
+      text-align: left !important;
+    }
+
+    @media @mobile {
+      padding: 0 36px 306px 36px !important;
+      background: url("../img/iphone.png") center top 259px no-repeat !important;
+      background-size: 195px auto !important;
+    }
+
+  }
+
+  .col-right {
+    padding-top: 238px;
+    text-align: left;
+    max-width: 510px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+
+    @media @mobile {
+      display: block;
+      padding: 50px 0 35px 0 !important;
+      width: 100%;
+    }
+
+    p {
+      white-space: normal;
+    }
+
+    h2 {
+      margin-bottom: 17px;
+
+      @media @mobile {
+
+        &.smaller {
+          font-size: 21px !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+

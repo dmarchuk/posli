@@ -1,0 +1,61 @@
+.what-is-posli {
+  padding: 0 159px 138px 159px;
+  overflow-x: hidden;
+  white-space: nowrap;
+
+  .col-left {
+    max-width: 460px;
+    padding-top: 242px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    button {
+      margin-top: 25px;
+      width: 148px;
+      height: 46px;
+      .border-radius(4px);
+    }
+  }
+
+  .col-right {
+    display: inline-block;
+    vertical-align: top;
+    padding: 154px 0 0 18px;
+    img {
+
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .what-is-posli {
+    padding-left: 100px;
+    padding-right: 100px;
+    .col-left {
+      max-width: 350px;
+    }
+  }
+}
+
+@media @mobile {
+  .what-is-posli {
+    padding: 0 12px;
+    .col-left {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 50px 36px 0 36px;
+      button {
+        display: none;
+      }
+    }
+    .col-right {
+      display: block;
+      padding: 0 0 35px 0;
+      img {
+        width: 100%;
+        margin-top: 29px;
+      }
+    }
+  }
+}

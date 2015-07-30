@@ -1,0 +1,148 @@
+/*
+ * Rules applied to whole project (selection color, container sizes,…)
+ */
+
+@selection_color: @blue;
+@selection_color_font: #fff;
+
+::-moz-selection {
+  background: @selection_color;
+  color: @selection_color_font;
+  text-shadow: none;
+}
+
+::selection {
+  background: @selection_color;
+  color: @selection_color_font;
+  text-shadow: none;
+}
+
+.content-wrapper {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  .box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  overflow-x: hidden;
+  font-family: @font_family;
+  font-size: @font_size;
+  color: @font_color;
+}
+
+p {
+
+  &.col {
+    line-height: 31px;
+    font-size: 18px;
+    color: #252c2e;
+    white-space: normal;
+  }
+
+}
+
+h2 {
+  font-size: 36px;
+
+  &.smaller {
+    font-size: 32px;
+    color: #060606;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.smooth *, .smooth {
+  -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+a {
+  color: inherit;
+}
+
+@media @mobile {
+
+  h1.smaller {
+    font-size: 21px !important;
+  }
+
+  p.col {
+    font-size: 16px !important;
+    line-height: 23px !important;
+  }
+
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error {
+  color: #dc0808 !important;
+  .placeholder(#dc0808) !important;
+}
+
+button {
+  .box-shadow(none);
+  border: 0;
+  color: white;
+  background: @blue;
+  font-weight: 700;
+  font-size: 16px;
+  .transition(background .1s linear);
+
+  &:hover {
+    background: @blueHover;
+  }
+
+  &:active {
+    background: @blueActive;
+  }
+
+}
+
+input {
+  .box-shadow(none);
+  border: 0;
+  background-color: #fff;
+  .placeholder(#8d9ea4);
+  color: #414647;
+  font-weight: 500;
+  padding-left: 22px;
+}
+
+button, input {
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+a {
+  text-decoration: none;
+}
+

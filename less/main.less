@@ -1,0 +1,44 @@
+/*
+ * This file includes all your components and modules. It shouldn’t contain any
+ * CSS rules.
+ * Based on ’SMACSS’ (Scalable and Modular Architecture for CSS). Read more at
+ * [http://smacss.com/]
+ *
+ * - Base:
+ *   - reset
+ *
+ * - Component:
+ *   - main idea: component is a reusable page element
+ *   - all your buttons, form inputs,…
+ *
+ * - Module:
+ *   - bigger page block, *uses components*, *defines the final component layout*,
+ *     *not always* reusable
+ *   - footer, header, user profile,…
+ */
+
+/*
+ * Import Bower components (include path is predefined)
+ */
+/*
+* Base
+*/
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/global";
+/*
+* Components
+*/
+@import "components/menu";
+@import "components/scroll-menu";
+@import "components/form";
+/*
+* Modules
+*/
+@import "modules/header";
+@import "modules/what-is-posli";
+@import "modules/everywhere";
+@import "modules/task-management";
+@import "modules/features";
+@import "modules/footer";
