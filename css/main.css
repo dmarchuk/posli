@@ -594,10 +594,15 @@ a {
   left: 0;
   right: 0;
   z-index: 10;
+  display: none;
+}
+#scroll-menu.mobile-fixed {
+  z-index: 1000;
 }
 @media only screen and (max-width: 767px) {
   #scroll-menu {
-    display: none;
+    text-align: center!important;
+    padding: 0!important;
   }
 }
 #scroll-menu .menu-logo {
@@ -1092,23 +1097,23 @@ a {
 }
 .features {
   padding-bottom: 169px;
+  padding-top: 166px;
 }
 @media only screen and (max-width: 767px) {
   .features {
-    padding: 0 12px 54px 12px !important;
+    padding: 55px 12px 54px 12px !important;
   }
 }
 .features .row {
   max-width: 960px;
   font-size: 0;
   width: 100%;
-  margin: 166px auto 0 auto;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
   .features .row {
     max-width: 100% !important;
     padding: 0 36px !important;
-    margin-top: 55px;
   }
 }
 .features .row .col {

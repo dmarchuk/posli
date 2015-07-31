@@ -9,9 +9,15 @@
   left: 0;
   right: 0;
   z-index: 10;
+  display: none;
+
+  &.mobile-fixed {
+    z-index: 1000;
+  }
 
   @media @mobile {
-    display: none;
+    text-align: center!important;
+    padding: 0!important;
   }
 
   .menu-logo {
